@@ -13,7 +13,30 @@
 # file2 = open("dxd","w")
 # file2.write("hello ")
 
-file2 = open("dxd","a")
-file2.write("\nhi i am huaman")
+# # 
+# with open(r"C:\Users\LENOVO\Desktop\AI_jounery_90_days\readme\day_05_py.md","r") as f:
+#     # print(f.readlines())
+
+#     # for line in f:
+#     #     print(line,end='')
+    
+#     size_to_read =50 
+#     fline = f.read(size_to_read)
+#     while len(fline) > 0:
+#         print(fline,end='')
+#         fline = f.read(size_to_read)
+
+with open(r"C:\Users\LENOVO\Desktop\AI_jounery_90_days\readme\day_05_py.md","r") as f:
+    with open("file.txt",'w') as wf:
+        for line in f:
+            wf.write(line)
+
+
+
+
+# with open("file.txt",'r') as f:
+#     print(f.read())
+
+
 
 

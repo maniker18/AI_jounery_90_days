@@ -1,0 +1,15 @@
+# learning file handling 
+
+with open("fil name")as f is the synatax 
+r is used for reading a file
+readlines is used for reading multiple lines
+readline for 1 line 
+seek(0) redirects where it starts
+tell() gives the place where it ends
+
+
+## write 
+we use w to pen write oper
+i there is no file with same name it creates new file in it 
+seek() replace the file with give text 
+we use a to append the file
