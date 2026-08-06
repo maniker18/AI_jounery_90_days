@@ -1,10 +1,25 @@
+# import os 
+# from pathlib import Path
+
+# k =os.environ.get("home")
+# print(k)
+
+# cwds =  Path.home()
+# print(cwds)
 import os
 from pathlib import Path
 
-# db_key = os.environ.get("ANTHROPIC_API_KEY")
-# print(db_key)
+# See ALL your environment variables that contain 'HOME' or 'USER'
+print("Environment variables with HOME or USER:")
+for key, value in os.environ.items():
+    if 'HOME' in key.upper() or 'USER' in key.upper():
+        print(f"  {key} = {value}")
 
-# file_path = Path("my_ai_env")/"settings.yaml"
-# print(file_path)
+# Compare different methods
+print(f"\nos.environ.get('HOME'): {os.environ.get('HOME')}")
+print(f"os.environ.get('USERPROFILE'): {os.environ.get('USERPROFILE')}")
+print(f"os.path.expanduser('~'): {os.path.expanduser('~')}")
+print(f"Path.home(): {Path.home()}")
+
 
 
